@@ -1,0 +1,42 @@
+@use 'mixins';
+.clients-say {
+    padding-bottom: 50px;
+    @media screen and (min-width:1024px) {
+        padding-bottom: 150px;
+    }
+    @media screen and (min-width:1440px) {
+        padding-bottom: 250px;
+    }
+    &__title{
+        @extend %section-header;
+    }
+    &__para{
+        @extend %grey-para;
+        text-align: center;
+        max-width: 500px;
+        padding: 10px 0 20px;
+        @media screen and (min-width:1440px) {
+            padding: 21px 0 46px;
+        }
+    }
+    &__scroll-container {
+        background-color: gray;
+        overflow: scroll;
+        white-space: nowrap;
+        width: 100%;
+        max-width: 1920px;
+    }
+    &__card{
+        display: inline-block;
+        width: 40vw;
+        min-width: 250px;
+        max-width: 569px;
+        height: 250px;
+        margin: 20px;
+        background-color: aqua;
+        &__para{
+            max-width: 80%;
+            white-space:wrap;
+        }
+    }
+}

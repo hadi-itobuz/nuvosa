@@ -39,6 +39,14 @@
     padding: 46px 29px;
     max-width: 365px;
 
+    @media screen and (min-width:768px) {
+        max-width: 315px;
+    }
+
+    @media screen and (min-width:1024px) {
+        max-width: 365px;
+    }
+
     &:hover {
         opacity: 1;
         background-color: white;

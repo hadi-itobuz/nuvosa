@@ -62,9 +62,10 @@
     @extend %grey-para;
     padding: 20px;
     text-align: center;
+
     @media screen and (min-width:1024px) {
-      padding: 16px 70px 44px 0px;
-      text-align:left;
+        padding: 16px 70px 44px 0px;
+        text-align: left;
     }
 }
 
@@ -91,10 +92,6 @@
 
     @media screen and (min-width:768px) {
         max-width: 30%;
-    }
-
-    @media screen and (min-width:1440px) {
-        width: 30%;
     }
 
     @media screen and (min-width:1600px) {
