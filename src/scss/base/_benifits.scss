@@ -20,7 +20,9 @@
     min-width: 300px;
     padding: 34px 48px 26px 30px;
     @extend %on-hover;
-
+    @media screen and (min-width:768px) {
+        max-width: 350px;
+    }
     &:hover {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
     }
