@@ -1,0 +1,62 @@
+@use 'mixins';
+
+.why-us {
+    padding: 0px 20px 50px;
+
+    @media screen and (min-width:768px) {
+        padding: 50px;
+        background-color: #FAFAFA;
+    }
+
+    @media screen and (min-width:1440px) {
+        padding: 80px 100px 90px;
+    }
+}
+
+.why-us__title {
+    @extend %section-header;
+}
+
+.why-us__para {
+    @extend %grey-para;
+    text-align: center;
+    max-width: 900px;
+    padding: 12px 0 25px;
+
+    @media screen and (min-width:768px) {
+        padding: 21px 0 56px;
+    }
+}
+
+.why-us__container {
+    gap: 5px 35px;
+}
+
+.why-us__card {
+    @extend %on-hover;
+    border: none;
+    background-color: rgb(252, 252, 252);
+    padding: 46px 29px;
+    max-width: 365px;
+
+    &:hover {
+        opacity: 1;
+        background-color: white;
+    }
+}
+
+.why-us__card__title {
+    font-size: 20px;
+    color: #212528;
+    padding: 36px 0 23px;
+}
+
+.why-us__card__para {
+    @extend %grey-para;
+    padding: 0 5px 25px;
+    text-align: center;
+}
+
+.why-us__card__btn {
+    @extend %small-yelllow-btn;
+}

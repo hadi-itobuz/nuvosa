@@ -1,0 +1,70 @@
+@use './mixins';
+
+.benifits {
+    gap: 10px;
+    max-width: 100vw;
+    padding: 50px 20px;
+
+    @media screen and (min-width:768px) {
+        gap: 10px 75px;
+    }
+
+    @media screen and (min-width:1600px) {
+        padding: 100px 20px 84px;
+    }
+}
+
+.benifits__card {
+    border: none;
+    max-width: 370px;
+    min-width: 300px;
+    padding: 34px 48px 26px 30px;
+    @extend %on-hover;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+    }
+}
+
+.benifits__card-logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width:768px) {
+        height: 71px;
+        width: 71px;
+        margin-bottom: 22px;
+    }
+}
+
+.benifits__card-logo--red {
+    background-color: #FFE8DF;
+}
+
+.benifits__card-logo--green {
+    background-color: #E3FFDF;
+}
+
+.benifits__card-logo--yellow {
+    background-color: #FFF8DF;
+}
+
+.benifits__card__title {
+    font-size: 20px;
+    color: #212528;
+
+    @media screen and (min-width:768px) {
+        font-size: 22px;
+    }
+}
+
+.benifits__para {
+    @extend %grey-para;
+    padding: 9px 0 11px;
+}
+
+.benifits__card__link {
+    font-size: 14px;
+    color: #6F77F1;
+}

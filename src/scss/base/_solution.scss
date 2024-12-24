@@ -1,0 +1,36 @@
+@use 'mixins';
+
+.solution {
+    padding: 20px;
+    gap: 47.5px;
+    background-color: #FAFAFA;
+    background-image: url('../images/design/solution.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media screen and (min-width:1440px) {
+        padding: 60px;
+    }
+
+    @media screen and (min-width:1600px) {
+        padding: 98px;
+    }
+}
+
+.solution__text {
+    max-width: 600px;
+}
+
+.solution__title {
+    @extend %section-header;
+}
+
+.solution__para {
+    @extend %grey-para;
+    padding: 20px 0 34px;
+}
+
+.solution__btn {
+    @extend %big-yellow-btn;
+}

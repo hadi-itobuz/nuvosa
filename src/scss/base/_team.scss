@@ -1,0 +1,52 @@
+@use './mixins';
+.team{
+  padding: 40px 20px 60px;
+  @media screen and (min-width:1440px) {
+    padding: 60px 20px 170px;
+  }
+  
+  &__title{
+    @extend %section-header;
+  }
+  &__para{
+    @extend %grey-para;
+    max-width: 662px;
+    margin: 10px 0px 40px;
+    text-align: center;
+    @media screen and (min-width:1440px) {
+      margin: 21px 0px 64px;
+    }
+  }
+  &__card-container{
+    gap: 30px;
+  }
+  &__card{
+    width: 269px;
+    padding: 53px 37px 44px;
+    &:hover{
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      transform: scale(1.05);
+      transition: 300ms ease-in-out;
+    }
+    &__name{
+      font-size: 22px;
+      color:#212528;
+      margin-top: 10px;
+    }
+    &__position{
+      @extend %grey-para;
+      font-size: 15px;
+    }
+    &__social-container{
+      width: 195px;
+      margin: 22px 0 0;
+    }
+    &__social{
+      &:hover{
+          filter: invert(42%) sepia(70%) saturate(652%) hue-rotate(201deg) brightness(103%) contrast(89%);
+          transform: scale(1.05);
+          transition: 300ms ease-in-out;
+      }
+    }
+  }
+}

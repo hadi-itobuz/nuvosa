@@ -1,0 +1,123 @@
+@use './mixins';
+
+.optimise {
+    margin: 60px;
+    padding-top: 30px;
+
+    @media screen and (min-width: 1024px) {
+        margin: 80px 60px 20px;
+    }
+
+    @media screen and (min-width:1600px) {
+        max-width: 1726px;
+        padding-right: 60px;
+        margin: 180px auto 39px;
+        padding-bottom: 194px;
+    }
+
+    position: relative;
+}
+
+.optimise__title {
+    @extend %section-header;
+    margin-bottom: 37px;
+}
+
+.optimise__para {
+    @extend %grey-para;
+    font-size: 20px;
+    max-width: 750px;
+    padding-bottom: 40px
+}
+
+.optimise__card {
+
+    @extend %on-hover;
+    border: none;
+    background: transparent;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        border-bottom: 4px solid #717AE0;
+        background-color: white;
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 56px 44px 92px 34px;
+    }
+}
+
+.optimise__card__img {
+    width: 77px;
+    height: 77px;
+    z-index: 2;
+}
+
+.optimise__card__img--bg {
+    height: 87px;
+    width: 87px;
+    border-radius: 50%;
+    margin-left: -77px;
+    margin-top: 7px;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.optimise__card__img--bg-red {
+    background-color: #F9EBF0;
+    opacity: 1;
+}
+
+.optimise__card__img--bg-green {
+    background-color: #80D3A4;
+}
+
+.optimise__card__img--bg-blue {
+    background-color: #60C2F8;
+}
+
+.optimise__card__img--bg-voilet {
+    background-color: #717AE0;
+}
+
+.optimise__card__number {
+    color: #e7e7ff;
+    font-size: 150px;
+    margin-bottom: -80px;
+    text-align: right;
+
+    @media screen and (min-width:375px) {
+        margin-left: 50px;
+    }
+
+    @media screen and (min-width:800px) {
+        margin-bottom: -90px;
+        color: #FAFAFF;
+        max-width: 77px;
+        font-size: 230px;
+    }
+}
+
+.optimise__card__title {
+    font-size: 24px;
+    color: #212528;
+}
+
+.optimise__card__text {
+    @extend %grey-para;
+
+    @media screen and (max-width:768px) {
+        padding-bottom: 20px;
+    }
+}
+
+.optimise__green-circle {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: #F5FDFF;
+    z-index: -1;
+}

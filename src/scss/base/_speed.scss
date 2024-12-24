@@ -1,0 +1,128 @@
+@use 'mixins';
+
+.speed {
+    padding: 40px 20px;
+    gap: 30px;
+
+    @media screen and (min-width:768px) {
+        padding: 40px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 87px 120px 62px;
+        gap: 15px;
+    }
+}
+
+.speed__img {
+    min-width: 50vw;
+    max-width: 500px;
+
+    @media screen and (min-width:758px) {
+        min-width: 40vw;
+    }
+
+    @media screen and (min-width:1024px) {
+        min-width: 20vw;
+    }
+
+    @media screen and (min-width:1440px) {
+        min-width: 500px;
+        max-width: 794.49px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.speed__content {
+    min-width: 80vw;
+    max-width: 500px;
+
+    @media screen and (min-width:758px) {
+        min-width: 40vw;
+    }
+
+    @media screen and (min-width:1024px) {
+        min-width: 35vw;
+    }
+
+    @media screen and (min-width:1440px) {
+        min-width: 500px;
+        max-width: 754px;
+    }
+}
+
+.speed__title {
+    @extend %section-header;
+}
+
+.speed__para {
+    @extend %grey-para;
+    padding: 20px;
+    text-align: center;
+    @media screen and (min-width:1024px) {
+      padding: 16px 70px 44px 0px;
+      text-align:left;
+    }
+}
+
+.speed__form__input {
+    border: 0;
+    background-color: #F2F2F2;
+
+    &::placeholder {
+        font-size: 17px;
+        color: #B6B6B6;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgb(111, 119, 241, 0.2);
+    }
+
+    @media screen and (min-width:768px) {
+        height: 53px;
+    }
+}
+
+.speed__form__input-wrapper {
+    width: 45%;
+
+    @media screen and (min-width:768px) {
+        max-width: 30%;
+    }
+
+    @media screen and (min-width:1440px) {
+        width: 30%;
+    }
+
+    @media screen and (min-width:1600px) {
+        max-width: none;
+        width: 285px;
+    }
+}
+
+.speed__form__input-wrapper:nth-child(1) {
+    border-right: 2px solid #DFDFDF;
+}
+
+.speed__form__btn {
+    font-size: 16px;
+    padding: 5px 15px;
+    color: #212528;
+    background-color: #FAD725;
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+
+    &:hover {
+        opacity: 0.8;
+        background-color: #fce25d;
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 14px 29px;
+        margin-top: 0;
+    }
+}

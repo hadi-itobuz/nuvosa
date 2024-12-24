@@ -1,0 +1,82 @@
+@use './mixins';
+
+.suscribe {
+  &__container {
+    width: 90%;
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 15px;
+
+    @media screen and (min-width:1440px) {
+      width: 1367px;
+      padding: 57px 153px 95px;
+    }
+
+    max-width: 1357px;
+  }
+
+  &__title {
+    @extend %section-header;
+
+    @media screen and (min-width:1440px) {
+      font-size: 50px;
+    }
+  }
+
+  &__para {
+    @extend %grey-para;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0 41px;
+  }
+
+  &__form {
+    gap: 10px 20px;
+
+    @media screen and (min-width:1440px) {
+      gap: 10px 30px;
+    }
+
+    &__input-wrapper {
+      width: 80%;
+      min-width: 220px;
+
+      @media screen and (min-width:1440px) {
+        width: 415px;
+      }
+    }
+
+    &__input {
+      &::placeholder {
+        font-size: 16px;
+        color: #727272;
+        font-weight: 200;
+      }
+
+      padding: 10px 30px;
+
+      @media screen and (min-width:1440px) {
+        padding: 24px 37px;
+
+        &::placeholder {
+          font-size: 19px;
+        }
+      }
+
+      border-radius: 5px;
+
+    }
+
+    &__btn {
+      @extend %on-hover;
+      background-color: #6F77F1;
+      color: white;
+      font-size: 20px;
+      padding: 7px 22px;
+
+      @media screen and (min-width:1440px) {
+        padding: 22px 36px;
+      }
+    }
+  }
+}

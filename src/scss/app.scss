@@ -1,26 +1,82 @@
-/* By Athlon Front-End Team */
-
-/* Core variables */
-@import 'base/vars';
-
-/* CSS Reset */
+@use "~bootstrap/scss/bootstrap";
+@use 'base/mixins';
+@use 'base/header';
+@use 'base/hero';
+@use 'base/services';
+@use 'base/optimise';
+@use 'base/solution';
+@use 'base/benifits';
+@use 'base/why-us';
+@use 'base/seo';
+@use 'base/speed';
+@use 'base/plans';
+@use 'base/team';
+@use 'base/suscribe';
 @import 'base/reset';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* CSS print */
-@import 'base/print';
+* {
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-/* Fonts */
-@import 'base/fonts';
+.stats {
+    max-width: 1165px;
+    padding: 40px 20px;
+    margin: auto;
+    gap: 5%;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
 
-/* Mixins, helpers and functions */
-@import 'base/mixins';
+    @media screen and (min-width:768px) {
+        padding: 40px;
+    }
 
-/* Vendor */
+    @media screen and (min-width:1440px) {
+        padding: 54px 64px;
+    }
+}
 
-/* Components */
+.stats__card__num {
+    font-size: 50px;
+    color: #666565;
+    text-align: center;
 
-/* Browser specific styles */
-@import 'dirty/hacks';
+    @media screen and (min-width:1024px) {
+        font-size: 73px;
+    }
 
-/* Demo Page styles */
-@import 'demo';
+    margin-bottom:0;
+}
+
+.stats__card__para {
+    color: #6F6F6F;
+    font-size: 17px;
+    margin-top: -20px;
+}
+
+.stats__card__dot {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    display: none;
+
+    @media screen and (min-width:1024px) {
+        display: inline;
+    }
+}
+
+.stats__card__dot--red {
+    background-color: #D1563B;
+}
+
+.stats__card__dot--green {
+    background-color: #3BD165;
+}
+
+.stats__card__dot--yellow {
+    background-color: #F7C745;
+}

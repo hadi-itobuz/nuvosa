@@ -1,0 +1,110 @@
+$light-gray: #727272;
+$dark-gray: #212528;
+@use 'mixins';
+header {
+    
+    .nav-link {
+        color: $dark-gray;
+    }
+    .header__logo {
+        height: 40px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    @media screen and (min-width:1024px) {
+        .navbar{
+            padding: 40px 20px;
+        }
+        .nav-options {
+            gap: 30px;
+        }
+    }
+    @media screen and (min-width:1440px) {
+        .navbar {
+            padding: 2vw 5vw 0;
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        .navbar {
+            padding: 2.5vw 7vw 0;
+            font-size: 24px;
+        }
+
+        .header__logo {
+            height: 60px;
+            width: 163px;
+        }
+
+        .header__nav {
+            gap: 150px;
+            width: fit-content;
+        }
+
+        .nav-options {
+            justify-content: flex-end;
+            gap: 30px;
+
+            @media screen and (min-width:1800px) {
+                gap: 65px;
+            }
+        }
+    }
+
+    .header__search-btn {
+        background-color: #FAD725;
+        padding: 11px;
+        @extend %on-hover;
+        @media screen and (min-width:1800px) {
+            height: 77px;
+            width: 83px;
+        }
+
+        .header__search-btn-img {
+            margin: auto;
+        }
+
+        &:hover {
+            border: 1px solid $dark-gray;
+            background-color: #ffe251;
+        }
+    }
+
+    .header__talk-btn {
+        border: 2px solid #212528;
+        font-size: 20px;
+        padding: 5px 20px;
+
+        @media screen and (min-width:1800px) {
+            padding: 18px 48px;
+            font-size: 24px;
+        }
+
+        &:hover {
+            background-color: rgb(20, 20, 20, 0.05);
+        }
+    }
+
+    .nav-item{
+        .nav-underline{
+            margin: auto;
+            padding-left: 8px;
+            visibility: hidden;
+            position: relative;
+            top: 24px;
+        }
+        &:hover{
+            @media screen and (min-width:768px) {
+                .nav-underline{
+                    visibility: visible;
+                }
+            }
+            
+            .nav-link{
+                margin-bottom:-36px ;
+            }
+        }
+    }
+}
