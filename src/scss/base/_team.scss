@@ -23,8 +23,10 @@
   &__card{
     width: 269px;
     padding: 53px 37px 44px;
+    border: 1px solid #EFEFEF;
     &:hover{
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: none;
       transform: scale(1.05);
       transition: 300ms ease-in-out;
     }

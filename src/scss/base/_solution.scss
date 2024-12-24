@@ -8,7 +8,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
+    @media screen and (min-width:1024px) {
+        padding: 30PX 40px;
+    }
     @media screen and (min-width:1440px) {
         padding: 60px;
     }
