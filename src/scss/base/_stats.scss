@@ -1,0 +1,59 @@
+@use 'mixins';
+
+.stats {
+    max-width: 1165px;
+    padding: 40px 20px;
+    margin: auto;
+    gap: 5%;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+
+    @media screen and (min-width:768px) {
+        padding: 40px;
+    }
+
+    @media screen and (min-width:1440px) {
+        padding: 54px 64px;
+    }
+}
+
+.stats__card__num {
+    font-size: 50px;
+    color: #666565;
+    text-align: center;
+
+    @media screen and (min-width:1024px) {
+        font-size: 73px;
+    }
+
+    margin-bottom:0;
+}
+
+.stats__card__para {
+    color: #6F6F6F;
+    font-size: 17px;
+    margin-top: -20px;
+}
+
+.stats__card__dot {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    display: none;
+
+    @media screen and (min-width:1024px) {
+        display: inline;
+    }
+}
+
+.stats__card__dot--red {
+    background-color: #D1563B;
+}
+
+.stats__card__dot--green {
+    background-color: #3BD165;
+}
+
+.stats__card__dot--yellow {
+    background-color: #F7C745;
+}

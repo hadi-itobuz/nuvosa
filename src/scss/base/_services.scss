@@ -1,75 +1,78 @@
 @use './mixins';
+.services{
+    &____container {
+        max-width: 1665px;
+        margin: 0 auto 50px;
+        --bs-columns: 1;
+    
+        @media screen and (min-width:768px) {
+            width: 90%;
+        }
+    }
+    &__card {
+        width: 80%;
+        min-width: 280px;
+        border: none;
+        text-decoration: none;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 4px 0px;
+    
+        @media screen and (min-width:768px) {
+            width: 48%;
+            max-width: 360px;
+        }
+    
+        @media screen and (min-width:1440px) {
+            max-width: 400px;
+        }
+    
+        @media screen and (min-width:1600px) {
+            max-width: 513px;
+        }
+    
+        @extend %on-hover;
 
-.services__container {
-    max-width: 1665px;
-    margin: 0 auto 50px;
-    --bs-columns: 1;
 
-    @media screen and (min-width:768px) {
-        width: 90%;
+        &__header,
+        &__body {
+            padding-right: 14%;
+            background-color: white;
+            border: none;
+        
+        }
+        
+        &__title {
+            font-weight: 400;
+            color: #212528;
+            font-size: 24px;
+        
+            @media screen and (min-width:1600px) {
+                font-size: 38px;
+            }
+        }
+        
+        &__img {
+            width: 60px;
+            height: auto;
+        
+            @media screen and (min-width:768px) {
+                width: 80px;
+            }
+        
+            @media screen and (min-width:1440px) {
+                width: auto;
+            }
+        
+        }
+        
+        &__body {
+            @extend %grey-para;
+        }
+        
+        &__footer {
+            background-color: white;
+            border: none;
+        }
+
     }
 }
 
-.services__card {
-    width: 80%;
-    min-width: 280px;
-    border: none;
-    text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 4px 0px;
-
-    @media screen and (min-width:768px) {
-        width: 48%;
-        max-width: 360px;
-    }
-
-    @media screen and (min-width:1440px) {
-        max-width: 400px;
-    }
-
-    @media screen and (min-width:1600px) {
-        max-width: 513px;
-    }
-
-    @extend %on-hover;
-}
-
-.services__card-header,
-.services__card-body {
-    padding-right: 14%;
-    background-color: white;
-    border: none;
-
-}
-
-.services__card-title {
-    font-weight: 400;
-    color: #212528;
-    font-size: 24px;
-
-    @media screen and (min-width:1600px) {
-        font-size: 38px;
-    }
-}
-
-.services__card-img {
-    width: 60px;
-    height: auto;
-
-    @media screen and (min-width:768px) {
-        width: 80px;
-    }
-
-    @media screen and (min-width:1440px) {
-        width: auto;
-    }
-
-}
-
-.services__card-body {
-    @extend %grey-para;
-}
-
-.services__card-footer {
-    background-color: white;
-    border: none;
-}

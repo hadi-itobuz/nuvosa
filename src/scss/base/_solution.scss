@@ -18,21 +18,21 @@
     @media screen and (min-width:1600px) {
         padding: 98px;
     }
+    &__text {
+        max-width: 600px;
+    }
+    
+    &__title {
+        @extend %section-header;
+    }
+    
+    &__para {
+        @extend %grey-para;
+        padding: 20px 0 34px;
+    }
+    
+    &__btn {
+        @extend %big-yellow-btn;
+    }
 }
 
-.solution__text {
-    max-width: 600px;
-}
-
-.solution__title {
-    @extend %section-header;
-}
-
-.solution__para {
-    @extend %grey-para;
-    padding: 20px 0 34px;
-}
-
-.solution__btn {
-    @extend %big-yellow-btn;
-}

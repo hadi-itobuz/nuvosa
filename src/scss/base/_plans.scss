@@ -30,7 +30,7 @@
     padding: 30px 20px;
     text-align: center;
     &:hover {
-      // background-color: #6F77F1;
+      cursor: pointer;
       background-image: url(../images/design/plans_bg.png);
       background-size: cover;
       .plans__card__description, .plans__card__price, .plans__card__title{

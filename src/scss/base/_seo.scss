@@ -12,92 +12,92 @@
         padding: 114px 141px 97px 131px;
         gap: 121px;
     }
-}
 
-.seo__img {
-    max-width: 500px;
-    height: auto;
+    &__img {
+        max-width: 500px;
+        height: auto;
 
-    @media screen and (min-width:1440px) {
-        max-width: 771px;
-        min-width: 650px;
-    }
-}
-
-.seo__content {
-    max-width: 600px;
-
-    @media screen and (min-width:1440px) {
-        max-width: 750px;
-        min-width: 650px;
-    }
-}
-
-.seo__title {
-    @extend %section-header;
-}
-
-.seo__para {
-    @extend %grey-para;
-    padding: 20px 0 40px;
-
-    @media screen and (min-width:1440px) {
-        padding: 36px 0 78px;
-
-    }
-}
-
-.seo__card-container {
-    gap: 51px;
-    width: 100%;
-}
-
-.seo__card {
-    padding: 10px;
-    max-width: 638px;
-    gap: 10px;
-    border: none;
-
-    @media screen and (min-width:768px) {
-        padding: 16px 47px 17px 43px;
-        gap: 28px;
+        @media screen and (min-width:1440px) {
+            max-width: 771px;
+            min-width: 650px;
+        }
     }
 
-    @extend %on-hover;
+    &__content {
+        max-width: 600px;
 
-    &:hover {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -2px, rgba(0, 0, 0, 0.3) 0px 3px 6px -3px;
+        @media screen and (min-width:1440px) {
+            max-width: 750px;
+            min-width: 650px;
+        }
     }
-}
 
-.seo__card__img {
-    height: 50px;
-    min-width: 50px;
-    border-radius: 50%;
-
-    @media screen and (min-width:768px) {
-        height: 101px;
-        min-width: 101px;
+    &__title {
+        @extend %section-header;
     }
-}
 
-.seo__card__img--red {
-    background-color: rgb(255, 137, 100, 0.2);
-}
+    &__para {
+        @extend %grey-para;
+        padding: 20px 0 40px;
 
-.seo__card__img--green {
-    background-color: rgb(110, 170, 101, 0.2);
-}
+        @media screen and (min-width:1440px) {
+            padding: 36px 0 78px;
 
-.seo__card__img--yellow {
-    background-color: rgb(206, 170, 35, 0.2);
-}
+        }
+    }
 
-.seo__card__title {
-    color: #212528;
-    font-size: 23px;
-}
+    &__card-container {
+        gap: 51px;
+        width: 100%;
+    }
 
-.seo__card__para {
-    @extend %grey-para;
+    &__card {
+        padding: 10px;
+        max-width: 638px;
+        gap: 10px;
+        border: none;
+
+        @media screen and (min-width:768px) {
+            padding: 16px 47px 17px 43px;
+            gap: 28px;
+        }
+
+        @extend %on-hover;
+
+        &:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -2px, rgba(0, 0, 0, 0.3) 0px 3px 6px -3px;
+        }
+
+        &__img {
+            height: 50px;
+            min-width: 50px;
+            border-radius: 50%;
+
+            @media screen and (min-width:768px) {
+                height: 101px;
+                min-width: 101px;
+            }
+
+            &--red {
+                background-color: rgb(255, 137, 100, 0.2);
+            }
+
+            &--green {
+                background-color: rgb(110, 170, 101, 0.2);
+            }
+
+            &--yellow {
+                background-color: rgb(206, 170, 35, 0.2);
+            }
+        }
+
+        &__title {
+            color: #212528;
+            font-size: 23px;
+        }
+
+        &__para {
+            @extend %grey-para;
+        }
+    }
 }
